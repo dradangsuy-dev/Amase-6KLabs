@@ -18,9 +18,11 @@
   	/* Emoji Appearance In Cover - Leave If Blank If You Dont Like*/
   	--Emoji1: url("https://cdn.7tv.app/emote/01GQZNGR10000DE69TSND12YX0/4x.webp");
   	--Emoji2: url("https://cdn.7tv.app/emote/01HS47Q1WR0002CEEGWVSC5CAF/4x.webp");
-    /* It Appear When Using Player "Shell" And "macOS" */
+    /* It Appear When Using Player "Boxy","Shell" And "macOS" */
+    --Text-Boxy: "AppleSang";
+    --FontSize-Boxy: 15px;  /* Recommend This Value < 16 */
     --Text-Shell: "AppleSang";
-    --Text-macOS: "Amuse";
+    --Text-macOS: "AppleSang";
     /* It Appear When Using Player "Discord" */
     --BG-DiscordActiveChat: url("https://github.com/AppleSang/CSS-Chat-For-Youtube/raw/refs/heads/main/asset/Crimson.webp");
   }
@@ -155,12 +157,15 @@
       clip-path: polygon(7% 0, 90% 0, 90% 100%, 7% 100%);
     } 
     #songtime::after {
-      content: "Amuse";
+      content: var(--Text-Boxy);
+      font-size: var(--FontSize-Boxy); 
       transform: rotate(270deg);
       white-space: pre-line;
       font-family: Ephesis;
       border: 2px dashed;
       padding: 26px 22px;
+      position: relative;
+      left: -9px;
     }
     #playbar {
       #active {
