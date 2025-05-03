@@ -30,19 +30,25 @@
   	overflow: hidden; 
   }
   /* Disable New Update */
-  img[src*="NEW-UPDATE-OUT-NOW-78741f15.png"],
-  img[src*="amuse_2-14c6a57d.svg"],
-  img[src*="logo_white-80816fc3.svg"],
-  img[src*="NEW-PLAYER-DESIGN-03a25151.png"] {
+  img[src*="NEW-UPDATE-OUT-NOW"],
+  img[src*="amuse_2"],
+  img[src*="logo_white"],
+  img[src*="NEW-PLAYER-DESIGN"] {
     display: none;
   }
+  /* Annouce Inject Code Success */
   .text-xs {
+    visibility: hidden;
     position: relative;
   }
   .text-xs::after {
-    content: " - ✔ Inject Modify Success  // AppleSang 🍎 ";
+    visibility: visible;
+    content: "✔ Inject Modify Success  // AppleSang 🍎";
     color: green;
-  }
+    text-align: left;
+    position: relative;
+    left: -14px;
+   }
   /* Change Background */
   #songtime { 
   	background: var(--BG-SongTime);
@@ -60,7 +66,6 @@
   	background: var(--BG-SongInfo);
   	text-align: center;
   }
-
 
   /* Add Emoji */
   .relative.flex.h-full.w-full {
