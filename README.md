@@ -1,5 +1,5 @@
 # Amase-6KLabs
-♫ Personalization Your Amuse-6KLabs  ✨
+♫ Personalization Your [Amuse](https://6klabs.com/amuse)-[6KLabs](https://6klabs.com/)  ✨
 
 > English Guide: Comming Soon!
 
