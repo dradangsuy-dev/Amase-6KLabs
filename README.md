@@ -21,3 +21,6 @@ Chỉ Cần Copy Nội Dung Trong File [Amase.CSS](https://github.com/AppleSang/
 
 
 
+## Credit
+- Emoji từ anh [DesmondVu](https://www.twitch.tv/desmondvu)
+- Các Ảnh Nền Từ [Iridescent - NerdOrDie](https://nerdordie.com/product/iridescent-stream-pack)
