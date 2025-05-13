@@ -16,14 +16,14 @@
   	/* If Appear When Change Song Or Using "Vinyl" Canva - Leave Blank If You Dont Want - Default Value: https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Honey.webp*/
   	--BG-Cover: url("");
   	/* Emoji Appearance In Cover - Leave If Blank If You Dont Like*/
-  	--Emoji1: url("https://cdn.7tv.app/emote/01F6NET6G00009JYTB75QDKV1S/4x.avif");
-  	--Emoji2: url("https://cdn.7tv.app/emote/01FBS4X63R000AAZQB4F0E7SEB/4x.avif"); 
+  	--Emoji1: url("");
+  	--Emoji2: url(""); 
     /* It Appear When Using Player "Boxy","Shell" And "macOS" */
     --BG-SongInfo-MacOS: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Dark_Iridescent.webp");
-    --Text-Boxy: "AppleSang";
+    --Text-Boxy: "Hộp nhạc của Dra";
     --FontSize-Boxy: 15px;  /* Recommend This Value < 16 */
-    --Text-Shell: "AppleSang";
-    --Text-macOS: "AppleSang";
+    --Text-Shell: "Hộp nhạc của Dra";
+    --Text-macOS: "Hộp nhạc của Dra";
     /* It Appear When Using Player "Discord" */
     --BG-DiscordActiveChat: url("https://github.com/AppleSang/CSS-Chat-For-Youtube/raw/refs/heads/main/asset/Crimson.webp");
   }
@@ -46,11 +46,12 @@
   }
   .text-xs::after {
     visibility: visible;
-    content: "✔ Inject Modify Success  // AppleSang 🍎";
+    content: "✔ Inject Modify Success";
     color: green;
     text-align: left;
     position: relative;
     left: -14px;
+    background: url("https://raw.githubusercontent.com/AppleSang/Amase-6KLabs/refs/heads/main/texturepack/Skyshard_Wave-E6.gif");
    }
   /* Change Background */
   #songtime { 
