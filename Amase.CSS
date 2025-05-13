@@ -50,7 +50,6 @@
     color: green;
     position: relative;
     left: -14px;
-    display: inline-block; /* Ensures it can have dimensions */
   }
   /* Change Background */
   #songtime { 
