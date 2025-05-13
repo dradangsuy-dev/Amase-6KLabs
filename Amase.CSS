@@ -9,16 +9,17 @@
   /* MAIN CONFIG 6KLABS CSS */
   :root {
   	/* Player Appearance Config */
-  	--BG-SongTime: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Dark_Iridescent.webp");
-  	--BG-LoadBar: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Honey.webp");
-  	--BG-SongBar: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Dark_Iridescent.webp");
-  	--BG-SongInfo: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Dark_Iridescent.webp");
+  	--BG-SongTime: url("https://raw.githubusercontent.com/AppleSang/Amase-6KLabs/refs/heads/main/texturepack/Skyshard_Wave-E6.gif");
+  	--BG-LoadBar: url("https://raw.githubusercontent.com/AppleSang/Amase-6KLabs/refs/heads/main/texturepack/Honey_Wave_Trans.gif");
+  	--BG-SongBar: url("https://raw.githubusercontent.com/AppleSang/Amase-6KLabs/refs/heads/main/texturepack/WavePink-SongBar.gif");
+  	--BG-SongInfo: url("https://raw.githubusercontent.com/AppleSang/Amase-6KLabs/refs/heads/main/texturepack/Skyshard_Wave-E6.gif");
   	/* If Appear When Change Song Or Using "Vinyl" Canva - Leave Blank If You Dont Want - Default Value: https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Honey.webp*/
   	--BG-Cover: url("");
   	/* Emoji Appearance In Cover - Leave If Blank If You Dont Like*/
-  	--Emoji1: url("https://cdn.7tv.app/emote/01GQZNGR10000DE69TSND12YX0/4x.webp");
-  	--Emoji2: url("https://cdn.7tv.app/emote/01HS47Q1WR0002CEEGWVSC5CAF/4x.webp");
+  	--Emoji1: url("https://cdn.7tv.app/emote/01F6NET6G00009JYTB75QDKV1S/4x.avif");
+  	--Emoji2: url("https://cdn.7tv.app/emote/01FBS4X63R000AAZQB4F0E7SEB/4x.avif"); 
     /* It Appear When Using Player "Boxy","Shell" And "macOS" */
+    --BG-SongInfo-MacOS: url("https://raw.githubusercontent.com/AppleSang/LumboChat-CSS-Youtube/refs/heads/main/asset/Dark_Iridescent.webp");
     --Text-Boxy: "AppleSang";
     --FontSize-Boxy: 15px;  /* Recommend This Value < 16 */
     --Text-Shell: "AppleSang";
@@ -53,19 +54,19 @@
    }
   /* Change Background */
   #songtime { 
-  	background: var(--BG-SongTime);
+  	background: var(--BG-SongTime) left bottom/cover no-repeat;
    }
   .relative.aspect-square.h-full {
   	background: var(--BG-Cover) center center/cover no-repeat;
   }
   #active {
-  	background: var(--BG-LoadBar);
+  	background: var(--BG-LoadBar) left bottom/cover no-repeat;
   }
   #playbar {
   	background: var(--BG-SongTime);
   }
   #songinfo {
-  	background: var(--BG-SongInfo);
+  	background: var(--BG-SongInfo) left bottom/cover no-repeat;
   	text-align: center;
   }
 
@@ -150,7 +151,6 @@
       scale: 1.11;
     }
     #songtime {
-      background-color: transparent !important;
       position: absolute;
       top: 0;
       z-index: 0;
@@ -221,7 +221,7 @@
 /* MODIFY MACOS  APPEAR */
 .bg-osxContentBg,
 .bg-osxContentBgLight {
-  background: var(--BG-SongInfo) center center/cover no-repeat;
+  background: var(--BG-SongInfo-MacOS) center center/cover no-repeat;
   #songinfo,
   #songtime {
     visibility: hidden;
