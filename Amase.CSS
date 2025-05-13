@@ -48,9 +48,10 @@
     visibility: visible;
     content: "✔ Inject Modify Success";
     color: green;
+    text-align: left;
     position: relative;
     left: -14px;
-  }
+   }
   /* Change Background */
   #songtime { 
   	background: var(--BG-SongTime) left bottom/cover no-repeat;
